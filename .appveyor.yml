@@ -9,15 +9,15 @@ branches:
 cache: node_modules
 
 install:
-  - yarn
+  - npm install
 
 build: off
 
 build_script:
-  - yarn run build
+  - npm run prodBuild
 
 test_script:
-  - yarn run lint
+  - npm run lint
 
 deploy_script:
   - git config --global credential.helper store
