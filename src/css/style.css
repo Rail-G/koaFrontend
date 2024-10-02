@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.product-table {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.create-table-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    transform: scale(0);
+}
+
+.chexbox-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-row {
+    display: block;
+    color: black;
+    cursor: pointer;
+    background-size: 12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    padding: 13px;
+}
+
+.edit {
+    background-image: url('../svg/pencil-file-svgrepo-com.svg');
+    
+}
+
+.delete {
+    background-image: url('../svg/cancel-close-svgrepo-com.svg');
+}
+
+.create {
+    background-image: url('../svg//add-button-svgrepo-com.svg');
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    border: 0;
+    border-radius: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+th {
+    background-color: bisque;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 5px;
+    text-align: center;
+    font-size: 17px;
+}
+
+th:nth-child(2) {
+    width: 300px;
+}
+
+td {
+    border: 0px;
+    border-bottom: 1px solid #000000;
+    padding: 10px 0;
+}
+
+.main-create-block {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.create-table-block {
+    width: 400px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 25px;
+    gap: 10px;
+    background-color: #ffffff;
+}
+
+.item-create {
+    width: 100%;
+}
+
+.create-text {
+    font-size: 19px;
+    margin-bottom: 5px;
+    color: rgb(86, 86, 86);
+}
+
+.create-input {
+    width: 100%;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 2px 6px;
+}
+
+.btn-block {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    width: 100px;
+    padding: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.main-alert-block {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.alert-info-block {
+    width: 300px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 25px;
+    gap: 10px;
+    background-color: #ffffff;
+}
+
+.alert-text {
+    font-size: 13px;
+}
+
+._hidden {
+    display: none;
+}
+
+.error-text {
+    font-size: 10px;
+    color: #ff0000;
+    vertical-align: middle;
+}
+
+.error-text::before {
+    content: '•';
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.status-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 13px;
+
+}
+
+.active-status {
+    background-image: url('../svg/accept-checklist-checkmark-svgrepo-com.svg');
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.active-row {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-decoration: line-through;
+    opacity: 0.2;
+    transition: all .5s;
+}
+
+.active-desc {
+    margin-top: 5px;
+    text-align: left;
+    padding: 0 10px;
+}
